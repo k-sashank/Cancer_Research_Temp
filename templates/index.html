@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <title> Cancer Detection </title>
+   </head>
+
+   <body>
+      <form method="POST" action="/send" align="center">
+          <label for name> Name:
+          <input type="text" name="name"/ required><br/><br/>
+          <label for age> Age:
+          <input type="number" name="age"/ required><br/><br/>
+          <label for gender>Gender: </label>
+          <input type="radio" name="gender" value="M">Male
+          <input type="radio" name="gender" value="F">Female<br/><br/>
+          <label for weight> Weight (kg):
+          <input type="number" step="any" name="weight"/ required><br/><br/>
+          <label for height> Height (meter(s)):
+          <input type="number" step="any" name="height"/ required><br/><br/>
+          <label for fbgl> Fasting Blood Glucose Levels (ng/mL):
+          <input type="number" step="any" name="fbgl"/ required><br/><br/>
+          <label for ppgbl> Post Prandial Blood Gluvose Levels (ng/mL):
+          <input type="number" step="any" name="ppgbl"/ required><br/><br/>
+          <label for m1> Marker 1:
+          <input type="number" step="any" name="m1"/ required><br/><br/>
+          <label for m2> Marker 2:
+          <input type="number" step="any" name="m2"/ required><br/><br/>
+          <label for m3> Marker 3:
+          <input type="number" step="any" name="m3"/ required><br/><br/>
+          <label for m4> Marker 4:
+          <input type="number" step="any" name="m4"/ required><br/><br/>
+          <label for m5> Marker 5:
+          <input type="number" step="any" name="m5"/ required><br/><br/>
+          <label for ques1>HAVE ANY  NUMBNESS OR TINGLING OR WEAKNESS IN LEGS? </label>
+          <input type="radio" name="ques1" value="Y">Yes
+          <input type="radio" name="ques1" value="N">No<br/><br/>
+          <label for ques2>OBSERVED ANY DISCHARGE FROM NIPPLES OTHER THAN MILK ? </label>
+          <input type="radio" name="ques2" value="Y">Yes
+          <input type="radio" name="ques2" value="N">No<br/><br/>
+          <label for ques3>ANY LUMP IN BREAST OR ARMPIT? </label>
+          <input type="radio" name="ques3" value="Y">Yes
+          <input type="radio" name="ques3" value="N">No<br/><br/>
+          <label for ques4>COSTANT  URGE TO URINATE AN OR DIFFICULTY IN URINATION? </label>
+          <input type="radio" name="ques4" value="Y">Yes
+          <input type="radio" name="ques4" value="N">No<br/><br/>
+          <label for ques5>HAVE ANY ABDOMINAL BLOATING OR SWELLING? </label>
+          <input type="radio" name="ques5" value="Y">Yes
+          <input type="radio" name="ques5" value="N">No<br/><br/>
+          <label for ques6>OBSERVED ANY BLEEDING AFTER MENOPAUSE? </label>
+          <input type="radio" name="ques6" value="Y">Yes
+          <input type="radio" name="ques6" value="N">No<br/><br/>
+          <label for ques7>ANY PERSISTENT PELVIC AND OR BACK PAIN? </label>
+          <input type="radio" name="ques7" value="Y">Yes
+          <input type="radio" name="ques7" value="N">No<br/><br/>
+          <label for ques8>ANY PAIN IN PELVIC AREA? </label>
+          <input type="radio" name="ques8" value="Y">Yes
+          <input type="radio" name="ques8" value="N">No<br/><br/>
+          <label for ques9>OBSERVED ANY BLEEDING, SPOTTING OR DISCHARGE? </label>
+          <input type="radio" name="ques9" value="Y">Yes
+          <input type="radio" name="ques9" value="N">No<br/><br/>
+          <label for ques10>ANY SHORTNESS OF BREATH WITH CHEST PAIN? </label>
+          <input type="radio" name="ques10" value="Y">Yes
+          <input type="radio" name="ques10" value="N">No<br/><br/>
+          <label for ques11>APPEARANCE OF BLOOD/RUST-COLORED SPUTUM WHILE COUGHING? </label>
+          <input type="radio" name="ques11" value="Y">Yes
+          <input type="radio" name="ques11" value="N">No<br/><br/>
+          <label for ques12>ANY PAIN IN  UPPER ABDOMEN? </label>
+          <input type="radio" name="ques12" value="Y">Yes
+          <input type="radio" name="ques12" value="N">No<br/><br/>
+          <label for ques19>OBSERVE YELLOW DISCOLORATION OF THE SKIN? </label>
+          <input type="radio" name="ques19" value="Y">Yes
+          <input type="radio" name="ques19" value="N">No<br/><br/>
+          <label for ques13>APPEARANCE OF  BLOOD IN STOOLS? </label>
+          <input type="radio" name="ques13" value="Y">Yes
+          <input type="radio" name="ques13" value="N">No<br/><br/>
+          <label for ques14>FREQUENT DIARRHEA OR CONSTIPATION? </label>
+          <input type="radio" name="ques14" value="Y">Yes
+          <input type="radio" name="ques14" value="N">No<br/><br/>
+          <label for ques15>OBSERVED ANY DECREASED FLOW OF URINE? </label>
+          <input type="radio" name="ques15" value="Y">Yes
+          <input type="radio" name="ques15" value="N">No<br/><br/>
+          <label for ques16>APPEARANCE OF BLOOD IN URINE? </label>
+          <input type="radio" name="ques16" value="Y">Yes
+          <input type="radio" name="ques16" value="N">No<br/><br/>
+          <label for ques17>ANY LUMP/SWELL ON EITHER TESTICLE? </label>
+          <input type="radio" name="ques17" value="Y">Yes
+          <input type="radio" name="ques17" value="N">No<br/><br/>
+          <label for ques18>ANY FEELING OF HEAVINESS IN SCROTUM? </label>
+          <input type="radio" name="ques18" value="Y">Yes
+          <input type="radio" name="ques18" value="N">No<br/><br/>
+
+          <br/><br/>
+
+
+          <label for bmi> Your BMI is:
+          <input type="number" name="bmi" value={{BMI}} readonly><br/><br/>
+
+          <textarea rows="5" cols="100" name="diseases" readonly>{{diseases}}</textarea><br/><br/>
+
+           <input type="submit" value="Compute">
+           <input type="reset" value="Reset">
+      </form>
+   </body>
+</html>
