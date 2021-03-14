@@ -79,6 +79,9 @@ def send():
                     diseases.apeend("Disease_10")
         if m1>150 and ques1=="Y":
             diseases.append("Disease_11")
+            
+        if len(diseases) == 0:
+            diseases.append("Don't worry! You are good! Thank you!")
 
         return render_template('index.html', BMI = BMI, diseases = 'You have the following:\n {}'.format(diseases))
 
